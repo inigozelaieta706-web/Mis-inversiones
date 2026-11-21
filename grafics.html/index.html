@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mercados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mercados</h1>
+    <div class="clave">
+      <input id="apikey" type="password" placeholder="API key de Twelve Data">
+      <button id="guardarKey" type="button">Guardar</button>
+    </div>
+  </header>
+
+  <main>
+    <p id="aviso" class="aviso" hidden>Necesitas una API key gratuita de <a href="https://twelvedata.com" target="_blank" rel="noopener">twelvedata.com</a>. Pégala arriba y pulsa Guardar.</p>
+
+    <section>
+      <input id="buscador" type="search" placeholder="Busca una acción, divisa o cripto (AAPL, EUR/USD, BTC/USD…)" autocomplete="off">
+      <div id="resultados"></div>
+      <div id="previa"></div>
+    </section>
+
+    <section>
+      <h2>Mi panel</h2>
+      <p id="vacio" class="vacio">Aún no has añadido ningún gráfico. Busca uno y pulsa +.</p>
+      <div id="panel" class="rejilla"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
