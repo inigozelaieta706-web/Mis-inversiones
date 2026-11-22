@@ -12,6 +12,7 @@
   <header>
     <h1>Mercados</h1>
     <div class="clave">
+      <button id="btnNoticias" type="button">Noticias</button>
       <input id="apikey" type="password" placeholder="API key de Twelve Data">
       <button id="guardarKey" type="button">Guardar</button>
     </div>
@@ -31,9 +32,17 @@
       <p id="vacio" class="vacio">Aún no has añadido ningún gráfico. Busca uno y pulsa +.</p>
       <div id="panel" class="rejilla"></div>
     </section>
+
+    <section id="noticias" hidden>
+      <h2>Noticias de la semana</h2>
+      <p id="notEstado" class="vacio"></p>
+      <div class="scroll"><table id="notTabla"></table></div>
+    </section>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
   <script src="script.js"></script>
+  <script src="noticias-datos.js"></script>
+  <script src="noticias.js"></script>
 </body>
 </html>

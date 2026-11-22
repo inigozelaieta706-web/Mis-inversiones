@@ -44,6 +44,8 @@ button:disabled { opacity:.35; cursor:default; background:transparent; color:var
 .graf { height:280px; }
 .err { color:var(--baja); font-size:.85rem; min-height:1.2em; margin:6px 0; }
 .accion { width:100%; font-size:1.3rem; line-height:1; padding:8px; }
+
+/* Mi inversión */
 .cab > div:first-child { flex: 1; }
 .pos { padding: 4px 12px; font-size: .8rem; white-space: nowrap; }
 .posForm { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
@@ -53,3 +55,16 @@ button:disabled { opacity:.35; cursor:default; background:transparent; color:var
 .posBtn { grid-column: 1 / -1; display: flex; gap: 8px; }
 .pnl { margin: 12px 0 0; font-weight: 600; }
 .pnl[hidden] { display: none; }
+
+/* Noticias */
+.scroll { overflow-x: auto; }
+#notTabla { border-collapse: collapse; width: 100%; min-width: 760px; }
+#notTabla th, #notTabla td { text-align: left; padding: 8px 10px; font-size: .9rem; }
+#notTabla th { color: var(--suave); font-weight: 400; }
+#notTabla tr + tr td { border-top: 1px solid var(--linea); }
+#notTabla tr.dia td { padding-top: 22px; color: var(--suave); font-weight: 600; text-transform: capitalize; border-top: 0; }
+.n4 { color: var(--baja); font-weight: 600; }
+.n3 { color: #f0a04b; font-weight: 600; }
+.n2, .n1 { color: var(--suave); }
+.act { width: 90px; padding: 4px 8px; font-size: .85rem; }
+.act:disabled { border-color: transparent; }
